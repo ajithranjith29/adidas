@@ -1,0 +1,99 @@
+.product-superstar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem; /* Reduced gap for a tighter layout */
+  padding: 1.5rem; /* Adjusted padding for a cleaner look */
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 80px; /* Account for header height */
+}
+
+.product-card {
+  background: #e3f2fd; /* Slightly darker light blue for better contrast */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Softer shadow for subtle elegance */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15); /* Slightly enhanced hover shadow */
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect ratio */
+  overflow: hidden;
+}
+
+.product-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+.product-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1e3a8a; /* Dark blue for a professional and clean contrast */
+}
+
+.product-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0284c7; /* Vibrant blue for a modern and energetic look */
+  margin-bottom: 1rem;
+}
+
+.product-button {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background-color: #0284c7; /* Light blue for primary action */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-button:hover {
+  background-color: #0369a1; /* Slightly darker blue for hover effect */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .product-superstar {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 1rem; /* Reduced padding for compact layout */
+    gap: 1rem; /* Adjusted gap for smaller screens */
+  }
+
+  .product-content {
+    padding: 1rem;
+  }
+
+  .product-title {
+    font-size: 1.1rem;
+  }
+
+  .product-price {
+    font-size: 1.25rem;
+  }
+}

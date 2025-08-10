@@ -1,0 +1,5 @@
+aws_region = "ap-southeast-1a" 
+public_key_path = "${path.module}/adidas-key.pub"
+base_ami_id = "ami-02c7683e4ca3ebf58"
+db_name = "ranjith"
+db_password = "ranjith123"

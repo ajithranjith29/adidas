@@ -1,0 +1,90 @@
+.content {
+  background-color:#000000; 
+  color: #ffffff; 
+  padding:2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  text-align: center; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 70vh;
+  margin-bottom: 3rem;
+}
+
+
+.head {
+  margin-bottom: 2rem
+}
+
+.head h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.head p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  padding: 0 8rem;
+}
+
+.head img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.bottom {
+  text-align: center;
+  margin-top: 2rem;
+  background-color: #f7e600;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  gap: 5rem;
+  height: 140px;
+  width: 100vw;
+  position: relative;
+  left: -30px;
+}
+
+.bottom h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+
+}
+
+.bottom button {
+  background: #000000;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bottom button:hover {
+  background-color: #ffffff; 
+  color: #000000;
+  transform
+  : translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.bottom .arrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.bottom button:hover .arrow {
+  transform: translateX(5px);
+}

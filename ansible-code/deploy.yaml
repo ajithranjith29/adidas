@@ -1,0 +1,37 @@
+---
+- name: Deploy adidas-src-code project
+  hosts: all
+  become: yes
+  vars:
+    src_path: "C:/Users/ajith.RANJITH/OneDrive/Desktop/ranjith/adidas-project/adidas-src-code"
+    dest_path: "/home/ubuntu/adidas-src-code"
+  tasks:
+    - name: Ensure destination directory exists
+      file:
+        path: "{{ dest_path }}"
+        state: directory
+        owner: ubuntu
+        group: ubuntu
+        mode: '0755'
+
+    - name: Copy source code to remote hosts
+      synchronize:
+        src: "{{ src_path }}/"
+        dest: "{{ dest_path }}/"
+        recursive: yes
+        delete: no
+      delegate_to: localhost
+
+    - name: Install Node.js dependencies
+      npm:
+        path: "{{ dest_path }}"
+        production: no
+
+    - name: Start the application
+      shell: |
+        cd {{ dest_path }}
+        npm start &
+      args:
+        chdir: "{{ dest_path }}"
+      async: 0
+      poll: 0
