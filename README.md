@@ -92,20 +92,3 @@ This project is for educational and demonstration purposes only.
 Ajith Ranjith
 GitHub: ajithranjith29
 
-yaml
-Copy
-Edit
-
----
-
-If you want, I can also **add an architecture diagram image** in the README so it visually explains the AWS setup — that makes it much more attractive for GitHub viewers and recruiters.  
-Do you want me to add that?
-
-
-
-
-
-
-
-
-Ask ChatGPT
