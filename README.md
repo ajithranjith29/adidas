@@ -48,24 +48,12 @@ Edit
 git clone https://github.com/ajithranjith29/adidas.git
 cd adidas
 2️⃣ Initialize Terraform
-bash
-Copy
-Edit
 terraform init
 3️⃣ Validate the Configuration
-bash
-Copy
-Edit
 terraform validate
 4️⃣ Plan the Deployment
-bash
-Copy
-Edit
 terraform plan
 5️⃣ Apply the Configuration
-bash
-Copy
-Edit
 terraform apply
 📸 Proof of Deployment
 This project includes:
